@@ -1,5 +1,5 @@
 //1
-const isGreater = (num) => {
+const isGreater = (num1, num2) => {
   //write a condition that checks if num1 is greater than num 2 and if it is return true else return false
 }
 
