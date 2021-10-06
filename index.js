@@ -21,12 +21,12 @@ const favoriteSeason = (season) => {
 
 //4
   /* write a function determineGrade, that takes in one parameter, grade. That prints the grade of a person using the following conditions
-    ->A if percentage >85 and <= 100
-    ->A-if grade<=85 and >80
-    ->B if grade<=80 and >70
-    ->C if grade<=70 and >60
-    ->D if grade<=60 and >40
-    ->E if grade<=40 and >35
+    ->A if grade>85 and <= 100
+    ->A-if grade>80 and <=85
+    ->B if grade>70 and <=80
+    ->C if grade>60 and <=70
+    ->D if grade>50 and <=60
+    ->E if grade>40 and <=50
     ->Failed if grade <= 35 should print 'candidate failed' 
     else 'invalid grade entered
   */
