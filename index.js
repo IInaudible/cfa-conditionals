@@ -1,11 +1,21 @@
 //1
 const isGreater = (num1, num2) => {
   //write a condition that checks if num1 is greater than num 2 and if it is return true else return false
+  if (num1 > num2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //2
 const isTeenager = (age) => {
   //write a condition that checks if age is greater or equal to 13 and less than or equal to 19 if it is then return true, else return false
+  if (age >= 12 && age <= 19) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //3
@@ -16,6 +26,17 @@ const favoriteSeason = (season) => {
   //otherwise check if season is equal to "winter" if it is return "winter is your favorite season"
   //otherwise check if season is equal to "fall" if it is return "fall is your favorite season"
   //else return "input is not a season, try again"
+  if (seasom === "summer") {
+    return "summer is your favorite season";
+  } else if (season === "spring") {
+    return "spring is your favorite season";
+  } else if (season === "winter") {
+    return "winter is your favorite season";
+  } else if (season === "fall") {
+    return "fall is your favorite season";
+  } else {
+    return "input is not a season, try again";
+  }
 }
   
 
@@ -31,8 +52,24 @@ const favoriteSeason = (season) => {
     else 'invalid grade entered
   */
 // write your function under this comment ***
-
-//uncomment the line below once you have written your function
-//console.log(determineGrade(70) //should output C
+const determineGrade = (grade) => {
+  if (grade > 85 && grade <= 100) {
+    return "A";
+  } else if (grade > 80 && grade <= 85) {
+    return "A-";
+  } else if (grade > 70 && grade <= 80) {
+    return "B";
+  } else if (grade > 60 && grade <= 70) {
+    return "C";
+  } else if (grade > 50 && grade <= 60) {
+    return "D";
+  } else if (grade > 40 && grade <= 50) {
+    return "E";
+  } else if (grade <= 35) {
+    return "candidate failed";
+  } else {
+    return "invalid grade entered";
+  }
 }
-  
+//uncomment the line below once you have written your function
+console.log(determineGrade(70)); //should output C
